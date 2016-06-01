@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">巡线工助手</string>
+    <string name="activity_login">登录</string>
+    <string name="activity_main">主程序</string>
+</resources>

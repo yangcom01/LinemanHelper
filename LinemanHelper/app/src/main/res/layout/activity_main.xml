@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.amap.api.maps.MapView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/main_mapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.amap.api.maps.MapView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始巡线"
+                android:id="@+id/main_patrolBtn"
+                android:background="@color/white"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看轨迹"
+                android:id="@+id/main_trajectoryBtn"
+                android:background="@color/white"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拍照"
+                android:id="@+id/main_pictureBtn"
+                android:background="@color/white"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上传"
+                android:id="@+id/main_uploadBtn"
+                android:layout_weight="1"
+                android:background="@color/white" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/main_locateBtn"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/loc_ok" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#11000000"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#550092f4"
+            android:text="经度:"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_longitudeTv"
+            android:layout_weight="3"
+            android:textColor="#aa0092f4"
+            android:text="117.70274"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#550092f4"
+            android:text="维度:"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_latitudeTv"
+            android:layout_weight="3"
+            android:textColor="#aa0092f4"
+            android:text="117.70274"
+            android:textSize="24dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
